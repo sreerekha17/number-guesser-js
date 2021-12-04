@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Helvetica Neue';
+    font-size: 16px;
+    background: linear-gradient(180deg, transparent, lightblue);
+}
+
+.wrapper { 
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section, header {
+    padding: 1em;
+    text-align: center;
+}
+
+header {
+    display: inline-flex;
+    justify-content: space-between;
+}
+header .retake {
+    height: 20px;
+    color: blue;
+    cursor: pointer;
+    display: inline;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0 0.5em;
+    margin-left: 2em;
+}
+
+header h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* circle area */
+
+/* Adding a container to the circle with largest 
+    possible size to float the elements below without overlapping 
+*/
+.circle-container {
+    height: 14em;
+    margin: 0 auto;
+    width: 10em;
+}
+.circle-indicator {
+    width: 8em;
+    height: 8em;
+    border: 3px solid black;
+    border-radius: 4.2em;
+    transform-origin: left top;
+}
+
+.circle-indicator.high {
+    background-color: red;
+    /* size 150 % */
+    transform: scale(1.5, 1.5);
+}
+
+.circle-indicator.low {
+    background-color: yellow;
+    /* size 75 % */
+    transform: yellow(.75, .75);
+}
+
+.circle-indicator.correct {
+    background-color: green;
+}
+
+.circle-indicator.done {
+    background-color: black;
+}
+
+
+/* game area */
+.game-area {
+    border: 1px dashed grey;
+}
+
+.game-area label {
+    font-weight: 400;
+}
+.game-area input {
+    width: 10em;
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 25px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.game-area input:hover,
+.game-area input:focus,
+.game-area input:active {
+    background-color: rgb(215, 228, 236);
+}
+
+.game-area button {
+    width: 5em;
+    height: 35px;
+    background: linear-gradient(#4aff51, #768576);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.game-area #validation-message {
+    font-size: 0.8em;
+    color: red;
+    font-style: italic;
+}
+
+#attemptsCount {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+
+/* Result area */
+
+

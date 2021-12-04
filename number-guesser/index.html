@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h3>Game Time!!</h3>
+                <span class="retake">Retake &#x21bb;</span>
+            </header>
+
+            <section class="main">
+                <div class="circle-container">
+                    <div class="circle-indicator"></div>
+                </div>
+                
+    
+                <div class="feedback"></div>
+            </section>
+    
+            <section class="game-area">
+                <label for="guessNumber">Enter your guess number</label>
+                <input type="number" min="1" max="100" id="guessNumber" />
+    
+                <button id="submitNumber">&#10003;Submit</button>
+                <div id="validation-message"></div>
+            </section>
+    
+            <section class="result">
+                <div>Number of tries: <span id="attemptsCount"></span></div>
+            </section>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
